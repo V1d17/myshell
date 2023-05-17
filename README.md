@@ -5,6 +5,6 @@ myShell (msh) is a custom shell written in C++ that serves as an alternative to 
 For more information about the project, please refer to the myshell_documentation.pdf file. 
 
 Here is a link to the presentation:
-https://drive.google.com/file/d/19b1tCv6tdSKqLiFti59HEiFbMd3kvhZs/view?usp=sharing
+https://drive.google.com/file/d/19b1tCv6tdSKqLiFti59HEiFbMd3kvhZs/view?usp=sharing (Open with a UMass Email)
 
 
