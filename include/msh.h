@@ -14,21 +14,22 @@
 #include <string>
 #include <cstring>
 #include <sstream>
-#include <iomanip> 
+#include <iomanip>
 #include <sys/wait.h>
 #include <vector>
 
 using namespace std;
 
-struct Variable {
-    string value;
-    bool readonly;
-    bool integer;
+struct Variable
+{
+  string value;
+  bool readonly;
+  bool integer;
 
-    Variable() : value(""), readonly(false), integer(false) {}
+  Variable() : value(""), readonly(false), integer(false) {}
 
-    Variable(string v, bool r = false, bool i = false) 
-        : value(v), readonly(r), integer(i) {}
+  Variable(string v, bool r = false, bool i = false)
+      : value(v), readonly(r), integer(i) {}
 };
 
 class my_shell
@@ -39,6 +40,7 @@ public:
   unordered_map<string, Variable> variables;
   unordered_map<std::string, std::string> aliases;
   void exec_help();
+  void exec_unalias(char **argv);
   static const int history_max_size = 10;
   void parse_command(char *cmd, char **cmdTokens);
   void exec_command(char **argv);
@@ -53,9 +55,6 @@ public:
   void exec_redirect(char **argv, bool append);
   void exec_history();
   void exec_alias(char **argv);
-
 };
-
-
 
 #endif
