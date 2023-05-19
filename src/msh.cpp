@@ -478,7 +478,7 @@ void my_shell::exec_unset(char **argv)
 
 void my_shell::exec_help()
 {
-    int cmd_width = 20; // Set this to the length of your longest command
+    int cmd_width = 30; // Set this to the length of your longest command
     cout << "List of commands supported:\n\n"
          << setw(cmd_width) << left << "cd [dir]"
          << "Changes the current directory to [dir]\n"
@@ -494,6 +494,8 @@ void my_shell::exec_help()
          << "Shows the command history\n"
          << setw(cmd_width) << left << "alias name = command "
          << "Creates an alias for a command (each arg seperated by spaces)\n"
+         << setw(cmd_width) << left << "unalias name"
+         << "Removes an alias with name (unalias -a removes all aliases)\n"
          << setw(cmd_width) << left << "quit"
          << "Exits the shell\n"
          << setw(cmd_width) << left << "cat > [file]"
