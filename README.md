@@ -102,6 +102,10 @@ myShell implements several key concepts of operating systems:
 -   **alias**: The **alias** command is used to create a shortcut for a
     longer command sequence. The alias and the command are stored in a
     map for quick lookup.
+    
+-   **unalias**: The **unalias** command is used to destroy a shortcut 
+    previously created by name. **unalias** command used with -a removes 
+    all created aliases.
 
 -   **cat**: The **cat** command in the shell is used to display the
     contents of a file. The **cat** command in this shell also supports
