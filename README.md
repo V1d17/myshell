@@ -10,6 +10,11 @@ cat, grep*. It also supports environment variable
 manipulation(*declare*), output redirection(\>, \>\>), piping(\|),
 command history(*history*), and command aliasing(*alias*).
 
+***Presentation***
+
+Here is a link to the presentation:
+https://drive.google.com/file/d/19b1tCv6tdSKqLiFti59HEiFbMd3kvhZs/view?usp=sharing (Open with a UMass Email)
+
 ***Structure***
 
 The main components of the project are:
@@ -55,11 +60,11 @@ myShell implements several key concepts of operating systems:
 
 3.  File Management
 
-myShell implements File Management principles through the implementation
-of \> and \>\> . When a redirection operator is used, the shell opens
-the specified file using the **open()** system call and then redirects
-the standard input or output to the file using the **dup2()** system
-call.
+> myShell implements File Management principles through the implementation
+> of \> and \>\> . When a redirection operator is used, the shell opens
+> the specified file using the **open()** system call and then redirects
+> the standard input or output to the file using the **dup2()** system
+> call.
 
 ***Command Descriptions***
 
@@ -129,9 +134,11 @@ Once the shell starts, you can enter commands at the prompt.
 
 To exit the shell, simply enter the \`exit\` or \`quit\` command. Use
 \`clear\` to clear the screen.
+
+***Comments and Questions***
+
+If you have any questions regarding this project, feel free to email me at vushah@umass.edu.
  
 
-Here is a link to the presentation:
-https://drive.google.com/file/d/19b1tCv6tdSKqLiFti59HEiFbMd3kvhZs/view?usp=sharing (Open with a UMass Email)
 
 
