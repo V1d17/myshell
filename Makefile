@@ -1,10 +1,10 @@
 _DEPS = msh.h
 _OBJ = msh.o
 _MOBJ = main_msh.o
-_TOBJ = test.o
+
 
 APPBIN = msh_app
-TESTBIN = msh_test
+
 
 IDIR = include
 CC = g++
@@ -12,7 +12,6 @@ CFLAGS = -I$(IDIR) -Wall -Wextra -g -pthread
 ODIR = obj
 SDIR = src
 LDIR = lib
-TDIR = test
 LIBS = -lm
 XXLIBS = $(LIBS) -lstdc++ -lgtest -lgtest_main -lpthread
 DEPS = $(patsubst %,$(IDIR)/%,$(_DEPS))
